@@ -1,130 +1,59 @@
-# :star:Git 기본 사용법:star:
+# :rocket: Fork a Repo :rocket:
+스터디 저장소 Fork + Clone + Sync 하기
+```
+```
 
-> 추가할 내용이 있다면 같이 추가해 나갑시다. ㅎㅎ
+### 참고한 사이트 
+> [GitHub Help](https://help.github.com/en/github)   
+> [Pro Git Book](https://git-scm.com/book/en/v2)
 
-## Git config 설정
 
-깃 설치를 완료했다면 git config 설정을 통해 사용 환경을 세팅할 수 있습니다.
+## 1. Git config 설정
 
-- 사용자 설정 깃을 커밋할 때 입력되는 사용자의 이메일과 이름 정보를 등록하는 방법입니다.
+Git을 설치하고 나서 가장 먼저 해야 하는 것은 username과 email을 설정하는 것이다. Git은 커밋할 때마다 이 정보를 사용한다.
 
   ```
   git config --global user.name "Dong-wook94"
   git config --global user.email example@example.com
   ```
 
-* git config 설정 확인 git config 설정이 제대로 되었는지 확인하고 싶다면 아래와 같은 명령어를 입력하면 됩니다.
-	```
-	git config --list
-	```
+git config 설정 확인 하기
+```
+git config --list
+```
 
 
 
-## Git Clone 
+## 2. Git Fork
+Fork는 다른 사람의 Repository(저장소)를 내 GitHub으로 복사하는 것이다. 흔히 fork는 다른 사람의 프로젝트를 수정하거나 추가 기능을 넣고 싶을 때 사용한다. Fork한 저장소는 원본 (기존의 저장소)와 연결되어 있다. 이는 원본에 수정이 있으면 내가 fork한 저장소로 `fetch`와 `merge`를 통해 원본의 변경 사항을 반영하거나 내가 한 수정한 커밋 결과를 원본에 반영할 수 있다는 뜻이다. 
 
-github에서 소스를 최초로 내려받을때, git clone 명령어를 사용합니다 (저장소를 복제한다고 생각하면 됩니다)
+> 스터디 저장소 Fork하기   
+![image](https://user-images.githubusercontent.com/53888115/74158015-ad838000-4c5c-11ea-9fba-949af5054164.png)
 
-![image](https://user-images.githubusercontent.com/36303777/71762211-385fb500-2f10-11ea-8601-3bd52cc526fd.png)
-
-위의 **빨간 화살표 부분을 누르면 자동 copy**가 됩니다.
-
-
-
-복사후
-
-~~~bash
-git clone (카피한주소) 
-//ex)
-git clone https://github.com/Dong-wook94/KNU-AlgorithmStudy.git
-~~~
+> Fork한 저장소   
+![image](https://user-images.githubusercontent.com/53888115/74160153-52ec2300-4c60-11ea-8ea3-1198e383c570.png)
 
 
+## 3. Git Clone
+`git clone`은 원격 저장소를 내 로컬 저장소로 복사해서 가져오는 것이다. Fork한 내 저장소를 로컬 환경에 복사해오도록 하자. 
 
-## Git fork 
+> 1. Clone with HTTPS (원격 저장소 주소 복사)
+![image](https://user-images.githubusercontent.com/53888115/74159624-6a76dc00-4c5f-11ea-9288-8be023507ff8.png)
 
-기존 원격 레파지토리를 본인 git 레파지토리로 복제한다고 생각하면됩니다. 
+> 2. 원하는 위치의 디렉토리에서 cmd 열기
+`예시) C:\Git`
 
-**화살표 누르면 포크됨!!!**
+> 3. `git clone` + 복사한 저장소
+`$ git clone https://github.com/내깃헙이름/저장소이름`
 
-![image](https://user-images.githubusercontent.com/36303777/71762263-a310f080-2f10-11ea-9e6b-706059a2558a.png)
-
-
-
-
-
-## Git 저장소 설정
-
-> Git remote 명령어를 사용
-
-아마 fork 후 개인 repository를 클론했다면 origin은 개인 원격 repository가 되어있을거임. 
-
-~~~bash
-git remote add (저장소 별칭) (저장소 url)
-//ex)
-git remote add mainrepo https://github.com/Dong-wook94/KNU-AlgorithmStudy.git
-~~~
+> 4. Enter
+`$ git clone https://github.com/내깃헙이름/저장소이름
+> Cloning into '저장소이름'...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.`
 
 
 
-## Git 커밋후 push까지
 
-**add**
-
-~~~bash
-/*전체 변경내용 add*/
-git add .    
-/*git 특정폴더 add*/
-git add 폴더이름/
-~~~
-
-**commit** 
-
-~~~bash
-git commit -m "커밋메시지"  
-~~~
-
-**push** : 현재 로컬커밋 다 올린다보면됨. 
-
-~~~bash
-git push (repository) (브랜치이름)
-/*왠만하면 아래처럼 하면됨 origin repository에 마스터브랜치로 push*/
-git push origin master
-~~~
-
-**pull** : 현재 원격저장소의 커밋까지 로컬로 가져옴
-
-~~~bash
-git pull (repository) (브랜치이름)
-/*왠만하면 아래처럼 하면됨 본인 origin으로 등록된 repository의 master브랜치 에서 pull 땡김*/
-git pull origin master
-~~~
-
-
-
-### :exclamation:  여기서 우리 스터디의 경우
-
-push 는 본인 repository에서
-
-pull 은 dong-wook94가 생성한 repository에서 하면됨.
-
-**그리고 항상 push 하기전에 pull 해서 충돌안나게 조심!**
-
-~~~bash
-git push origin master
-/*지혜*/
-git pull dongwook master
-/*진오*/
-git pull others master
-~~~
-
-
-
-## git pull request
-
-개인 repository에 push후 메인 repository로 pr 하는법
-
-![image](https://user-images.githubusercontent.com/36303777/71762476-30eddb00-2f13-11ea-903b-95acb976daf5.png)
-
-위의 화살표가 가리키는 `New pull request` 선택
-
-이후 title 내용 정리후 `create pull request` 눌러 pr 하기
