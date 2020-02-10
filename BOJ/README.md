@@ -131,6 +131,14 @@ $ git merge upstream/master
 
 ## :exclamation: 우리 스터디에서 소스코드 올릴 때 :exclamation:
 - 소스코드는 `Main문제번호_이름.확장자` 형식으로 저장
-- 원본 저장소 `merge` 이후 **내 로컬 저장소**의 해당 폴더에 소스코드 파일 넣고 push
+- 원본 저장소 `merge` 이후 **내 로컬 저장소**의 해당 폴더에 소스코드 파일 넣기
+- 먼저 fork한 내 저장소에 commit 후 push
+```
+git push origin master
+```   
+- 이후 원본 저장소에 push
+```
+git push upstream master
+```
 
 
