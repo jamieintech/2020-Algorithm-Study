@@ -2,7 +2,7 @@ package Dp;
 
 import java.util.Scanner;
 
-public class Main1003 {
+public class Main2748 {
 	
 	public static void main(String[] args) {
 		
