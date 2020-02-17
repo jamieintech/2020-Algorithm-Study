@@ -1,8 +1,17 @@
 # :rocket: Git 사용법 정리 :rocket:
-스터디 저장소 Fork + Clone + Sync 하기
+**스터디 저장소 Fork + Clone + Sync 하기**
 
+> 다들 스크롤 내리지 말라고 위에 다시 적어주는 소스코드 올리는 방법:kissing_heart:
+> 1. git fetch upstream (원본=스터디저장소 땡겨오기)
+> 2. git merge upstream/master (현재 내 저장소랑 원본이랑 싱크 맞추기)
+> 3. 폴더에 Main문제번호_이름.java 붙여넣기
+> 4. git status (현재 변경 사항 확인하기 - optional)
+> 5. git add . (push하려는 파일 추가하기)
+> 6. git commit -m "커밋 메세지" ([ADD], [UPDATE], [DELETE] 중 하나 골라서 쓰기)
+> 7. git push origin master (내 저장소에 push하기)
+> 8. git push upstream master (스터디 저장소에 push 하기)
 
-### 참고한 사이트 
+## 참고한 사이트 
 > [GitHub Help](https://help.github.com/en/github)   
 > [Pro Git Book](https://git-scm.com/book/en/v2)
 
