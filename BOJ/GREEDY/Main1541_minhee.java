@@ -10,6 +10,7 @@ public class Main1541 {
 		//괄호 문제(연산시 가장 작은값!!)
 		//'-'기호를 기준으로 괄호를 만들어 다음 -를 만나기전까지 모든 +기호를 -연산으로 바꾸기!
 		//혹시 몰라서 속도 때문에 잠굼..(덕짱이 시간 초과 난대서 buffer로 접근 시작함)
+		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		//1. - 로 나눠서 배열에 담기
