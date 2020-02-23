@@ -29,6 +29,7 @@ public class Main1932_seonghyeon {
 		int[][] sum = new int[501][501];
 		sum[0][0] = triangle[0][0];
 		int max = 0;
+		
 		for(int i=1; i<n; i++) {
 			for(int j=0;j<=i; j++) {
 				if(j == 0 ) {
