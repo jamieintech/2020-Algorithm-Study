@@ -1,10 +1,10 @@
 ## 큐, 댁
 [BOJ 정렬](https://www.acmicpc.net/step/12)
-- 문제 10845 : [큐1] (https://www.acmicpc.net/problem/10845)
+- 문제 10845 : [큐1](https://www.acmicpc.net/problem/10845)
 - 문제 18258 : [큐2](https://www.acmicpc.net/problem/18258)
 - 문제 2164 : [카드2](https://www.acmicpc.net/problem/2164)
 - 문제 11866 : [요세푸스 문제 0](https://www.acmicpc.net/problem/11866)
 - 문제 1966  : [프린터 큐](https://www.acmicpc.net/problem/1966)
 - 문제 10866  : [덱](https://www.acmicpc.net/problem/10866)
-- 문제 1021 : [회전하는 큐] (https://www.acmicpc.net/problem/1021)
-- 문제 5430 : [AC] (https://www.acmicpc.net/problem/5430)
+- 문제 1021 : [회전하는 큐](https://www.acmicpc.net/problem/1021)
+- 문제 5430 : [AC](https://www.acmicpc.net/problem/5430)
